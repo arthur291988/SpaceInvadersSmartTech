@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 492822}
   - component: {fileID: 21264944}
   - component: {fileID: 9552330}
-  m_Layer: 0
+  - component: {fileID: -2116922415227633503}
+  - component: {fileID: 5931995338758675870}
+  m_Layer: 3
   m_Name: spaceship_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,3 +104,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2116922415227633503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e8c8f9f7b598546a7096de500776b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOfEnemy: 0
+  gameManager: {fileID: 0}
+  leftBorderForShip: 0
+  rightBorderForShip: 0
+  shipTransform: {fileID: 0}
+  shotTimeMin: 0
+  ObjectPulled: {fileID: 0}
+  ObjectPulledList: []
+--- !u!58 &5931995338758675870
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.34
