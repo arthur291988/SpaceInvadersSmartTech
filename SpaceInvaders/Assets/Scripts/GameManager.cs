@@ -149,14 +149,14 @@ public class GameManager : MonoBehaviour
     public void defeatFunction()
     {
         WinLoseButtonImage.color = Color.red;
-        winLoseText.text = "ПОРАЖЕНИЕ! " + score.ToString() + " очков";
+        winLoseText.text = "ПОРАЖЕНИЕ! Очки " + score.ToString();
         WinLoseButton.SetActive(true);
     }
 
     private void victoryFunction()
     {
         WinLoseButtonImage.color = Color.green;
-        winLoseText.text = "ПОБЕДА! "+ score.ToString()+" очков";
+        winLoseText.text = "ПОБЕДА! Очки "+ score.ToString();
         WinLoseButton.SetActive(true);
     }
 
