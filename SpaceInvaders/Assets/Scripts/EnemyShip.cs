@@ -30,7 +30,7 @@ public class EnemyShip : MonoBehaviour
     {
         shipTransform = transform;
         yPositionOfShip = shipTransform.position.y;
-        speedOfShip = levelOfEnemy>3?3: levelOfEnemy; // скорочть врагов не более 3
+        speedOfShip = levelOfEnemy>3?3: levelOfEnemy; // скороcть врагов не более 3
         HPOfEnemy = levelOfEnemy;
         moveRight = true;
     }
@@ -60,6 +60,7 @@ public class EnemyShip : MonoBehaviour
         ObjectPulled = ObjectPuller.current.GetGameObjectFromPull(ObjectPulledList);
         ObjectPulled.transform.position = shipTransform.position;
         ObjectPulled.SetActive(true);
+        gameManager.reduceTheEnemyCount(levelOfEnemy);
         gameObject.SetActive(false);
     }
 

@@ -14,17 +14,20 @@ public class EnemyBullet : MonoBehaviour
 
     [SerializeField]
     private Transform bulletTransform;
+    [SerializeField]
+    private TrailRenderer bulletTrail;
 
     private void OnEnable()
     {
         bulletRB.AddForce(Vector2.down * 6, ForceMode2D.Impulse);
+        bulletTrail.Clear();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ObjectPulledList = ObjectPuller.current.GetBulletBurst();
         ObjectPulled = ObjectPuller.current.GetGameObjectFromPull(ObjectPulledList);
-        ObjectPulled.transform.position = transform.position + new Vector3(0, 0.3f, 0); //взрыв пули нужен чуть выше точки коллизии для хорошего эффекта
+        ObjectPulled.transform.position = transform.position + new Vector3(0, -0.3f, 0); //взрыв пули нужен чуть ниже точки коллизии для хорошего эффекта
         ObjectPulled.SetActive(true);
 
         if (collision.gameObject.TryGetComponent<PlayerShip>(out PlayerShip playerShip))

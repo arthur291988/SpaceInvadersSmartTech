@@ -157,8 +157,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 1, b: 0.991797, a: 0.29411766}
-      key1: {r: 0, g: 1, b: 0.991797, a: 0.29411766}
+      key0: {r: 1, g: 0.6324958, b: 0, a: 0.29411766}
+      key1: {r: 1, g: 0.6324958, b: 0, a: 0.29411766}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -256,3 +256,4 @@ MonoBehaviour:
   ObjectPulled: {fileID: 0}
   ObjectPulledList: []
   bulletTransform: {fileID: 1336245653792821268}
+  bulletTrail: {fileID: 8058802755186411574}

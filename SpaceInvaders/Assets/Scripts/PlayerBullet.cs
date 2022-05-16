@@ -13,10 +13,13 @@ public class PlayerBullet : MonoBehaviour
     public List<GameObject> ObjectPulledList;
     [SerializeField]
     private Transform bulletTransform;
+    [SerializeField]
+    private TrailRenderer bulletTrail;
 
     private void OnEnable()
     {
         bulletRB.AddForce(Vector2.up*7, ForceMode2D.Impulse);
+        bulletTrail.Clear();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

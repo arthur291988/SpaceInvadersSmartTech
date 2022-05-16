@@ -235,6 +235,7 @@ MonoBehaviour:
   ObjectPulled: {fileID: 0}
   ObjectPulledList: []
   bulletTransform: {fileID: 1336245653792821268}
+  bulletTrail: {fileID: 8058802755186411574}
 --- !u!50 &7661974441311319688
 Rigidbody2D:
   serializedVersion: 4
